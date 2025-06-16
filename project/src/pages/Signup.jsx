@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Eye, EyeOff, Mail, Lock, User, Star, AlertCircle, CheckCircle } from 'lucide-react';
+import { Eye, EyeOff, Mail, Lock, User,  AlertCircle, CheckCircle } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMosque } from '@fortawesome/free-solid-svg-icons';
+
 import { useAuth } from '../contexts/AuthContext';
 
 export const Signup = () => {
@@ -96,9 +99,13 @@ export const Signup = () => {
         {/* Header */}
         <div className="text-center mb-8 animate-slide-up">
           <div className="flex justify-center mb-4">
-            <div className="p-3 bg-gradient-to-br from-islamic-500 to-islamic-600 dark:from-islamic-600 dark:to-islamic-700 rounded-2xl shadow-lg animate-pulse-gentle transform hover:scale-110 transition-all duration-300">
-              <Star className="h-8 w-8 text-white" />
-            </div>
+            <div className="p-2 bg-gradient-to-br from-islamic-500 to-islamic-600 rounded-lg group-hover:from-islamic-600 group-hover:to-islamic-700 transition-all duration-200">
+                         <FontAwesomeIcon
+                           icon={faMosque}
+                           className="h-10 w-10 text-white"
+                           style={{ color: "#ffff" }}
+                         />
+                       </div>
           </div>
           <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-2 transition-colors duration-300">Create Account</h1>
           <p className="text-gray-600 dark:text-gray-400 font-arabic transition-colors duration-300">إنشاء حساب جديد</p>
