@@ -18,7 +18,7 @@ export const Footer = () => {
           </p>
           <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300">
             <p className="text-xs text-gray-500 dark:text-gray-400 transition-colors duration-300">
-              Prayer times provided by Aladhan API • Times are calculated using Muslim World League method
+              © 2025 Prayer Times • Times are calculated using Muslim World League method
             </p>
           </div>
         </div>
