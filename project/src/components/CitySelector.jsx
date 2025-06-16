@@ -17,6 +17,7 @@ const MOROCCAN_CITIES = [
   { name: 'El Jadida', arabic: 'الجديدة' },
   { name: 'Khouribga', arabic: 'خريبكة' },
   { name: 'Nador', arabic: 'الناظور' },
+  { name: 'Bouarfa', arabic: 'بوعرفة' },
 ];
 
 export const CitySelector = ({ selectedCity, onCityChange }) => {
